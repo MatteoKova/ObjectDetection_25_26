@@ -1,4 +1,4 @@
-# Deep Learning 2025/26
+# Object Detection - Deep Learning
 
 Questo repository raccoglie il lavoro svolto per lo sviluppo di modelli di computer vision basati su YOLO per il rilevamento di oggetti in immagini, con un focus su due classi principali: `ball` e `npr`.
 
