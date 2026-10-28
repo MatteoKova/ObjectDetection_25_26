@@ -1,0 +1,30 @@
+Failure # 1 (occurred at 2026-05-22_14-39-01)
+[36mray::ImplicitFunc.train()[39m (pid=5297, ip=172.28.0.12, actor_id=e66d6e2caa80afb66e39c9e101000000, repr=train_yolo_trial)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/ray/tune/trainable/trainable.py", line 324, in train
+    raise skipped from exception_cause(skipped)
+  File "/usr/local/lib/python3.12/dist-packages/ray/air/_internal/util.py", line 98, in run
+    self._ret = self._target(*self._args, **self._kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/ray/tune/trainable/function_trainable.py", line 44, in <lambda>
+    training_func=lambda: self._trainable_func(self.config),
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/ray/tune/trainable/function_trainable.py", line 249, in _trainable_func
+    output = fn()
+             ^^^^
+  File "/tmp/ipykernel_848/64981531.py", line 57, in train_yolo_trial
+  File "/usr/local/lib/python3.12/dist-packages/ultralytics/engine/model.py", line 792, in train
+    self.trainer.train()
+  File "/usr/local/lib/python3.12/dist-packages/ultralytics/engine/trainer.py", line 246, in train
+    self._do_train()
+  File "/usr/local/lib/python3.12/dist-packages/ultralytics/engine/trainer.py", line 380, in _do_train
+    self._setup_train()
+  File "/usr/local/lib/python3.12/dist-packages/ultralytics/engine/trainer.py", line 364, in _setup_train
+    self.set_class_weights()  # compute class weights after dataloader is ready
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/ultralytics/models/yolo/detect/train.py", line 158, in set_class_weights
+    assert 0 <= self.args.cls_pw <= 1.0, "cls_pw must be in the range [0, 1]"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: cls_pw must be in the range [0, 1]

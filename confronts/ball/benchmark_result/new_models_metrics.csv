@@ -1,0 +1,6 @@
+model,path,file_size_MB,params_M,GFLOPs,FPS,latency_ms,latency_std_ms,mAP50,mAP50_95,Precision,Recall,F1,per_class_mAP50
+ball_best_v1,/content/drive/MyDrive/DeepLearningProject/our_new_models/ball_best_v1.pt,20.28,9.95,22.5,63.5,15.75,1.62,0.6185,0.3066,0.6931,0.6429,0.6671,{'basketball': 0.6185}
+ball_best_v2,/content/drive/MyDrive/DeepLearningProject/our_new_models/ball_best_v2.pt,20.29,9.95,22.5,62.6,15.98,1.5,0.64,0.3283,0.8935,0.6594,0.7588,{'basketball': 0.64}
+ball_best_v3,/content/drive/MyDrive/DeepLearningProject/our_new_models/ball_best_v3.pt,20.32,9.95,22.5,59.4,16.84,1.99,0.5717,0.2903,0.9119,0.5866,0.7139,{'basketball': 0.5717}
+ball_best_v4,/content/drive/MyDrive/DeepLearningProject/our_new_models/ball_best_v4.pt,20.28,9.95,22.5,53.5,18.7,4.32,0.6877,0.3153,0.7495,0.6589,0.7013,{'basketball': 0.6877}
+ball_best_v5,/content/drive/MyDrive/DeepLearningProject/our_new_models/ball_best_v5.pt,20.32,9.95,22.5,59.0,16.95,3.74,0.4987,0.242,0.8261,0.5293,0.6452,{'basketball': 0.4987}

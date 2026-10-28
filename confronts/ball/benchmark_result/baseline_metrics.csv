@@ -1,0 +1,2 @@
+model,path,file_size_MB,params_M,GFLOPs,FPS,latency_ms,latency_std_ms,mAP50,mAP50_95,Precision,Recall,F1,per_class_mAP50
+ball_detector,/content/drive/MyDrive/DeepLearningProject/github_old_models/ball_detector.pt,172.67,86.02,137.69,27.0,36.98,0.37,0.1498,0.03,0.2875,0.2743,0.2807,{'Ball': 0.1498}
